@@ -47,32 +47,16 @@ $ aws configure
 ```
 and enter the appropriate values for your AWS account
 
- * If you want to make the project from scratch then you can follow this [**TUTORIAL**](https://docs.aws.amazon.com/cdk/latest/guide/hello_world.html) to create your cdk stack. (I have chosen the language *typescript*)
- 
- * Here are the relevant commands:
 ```
-$ mkdir quote-sender-cdk
-$ cd quote-sender-cdk
-$ cdk init app --language typescript
 $ npm run build
 ```
- * Put code in a directory next to lib, *`./lambda_code/lambda-handler.py`*
 
- * Make a document named *`phone_subscriptions`* in the main directory of your stack and fill it with the phone numbers you wish to send these quotes to. **Make sure to put every phone number in a separate line**.
-
- * After you have created the stack you can change the *`./lib/send-quotes-cdk-stack.ts`* (e.g. use my file) to make any other changes to the stack.
+ * Put the phone numbers you wish to send these quotes to in the document named *`phone_subscriptions`* in the main directory of your stack. **Make sure to put every phone number in a separate line**.
 
  * Install the used libraries.
 ```
-$ npm install @aws-cdk/aws-sns
-$ npm install @aws-cdk/aws-sns-subscriptions
-$ npm install @aws-cdk/aws-lambda
-$ npm install @aws-cdk/aws-dynamodb
-$ npm install @aws-cdk/aws-events
-$ npm install @aws-cdk/aws-events-targets
+$ npm install
 ```
-
- * **NOTE**: Make sure that all the versions of these libraries are the same, or the program wil not work. If you have different versions (i.e. you install these libraries at different times), you will need to install them again.
 
 ## Deployment
 
