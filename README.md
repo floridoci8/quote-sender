@@ -47,14 +47,11 @@ $ aws configure
 ```
 and enter the appropriate values for your AWS account
 
-```
-$ npm run build
-```
-
  * Put the phone numbers you wish to send these quotes to in the document named *`phone_subscriptions`* in the main directory of your stack. **Make sure to put every phone number in a separate line**.
 
  * Install the used libraries.
 ```
+$ npm run build
 $ npm install
 ```
 
@@ -83,16 +80,3 @@ $ aws lambda invoke \
 --payload '{ "name": "Bob" }' \
 response.json
  ```
-
-## Some Useful CDK Commands
-
-*This section has been generated automatically by cdk.*
-
- * `npm run build`   compile typescript to js
- * `npm run watch`   watch for changes and compile
- * `npm run test`    perform the jest unit tests
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk synth`       emits the synthesized CloudFormation template
- 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
